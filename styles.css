@@ -1,0 +1,273 @@
+.frame {
+    background-color: #010100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.frame .div {
+    background-color: #010100;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+}
+
+.frame .overlap {
+    width: 100%;
+    height: 50px;
+    background-color: #010100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.frame .text-wrapper {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.frame .div-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.frame .text-wrapper-2 {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.frame .div-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 8px 10px;
+}
+
+.frame .text-wrapper-3 {
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #000000;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.frame .overlap-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.frame .jim {
+    width: 80%;
+    max-width: 956px;
+    height: auto;
+    margin: 20px 0; /* Adjust margin for spacing */
+}
+
+.frame .text-wrapper-4, .frame .text-wrapper-5, .frame .text-wrapper-6 {
+    text-align: center;
+    width: 100%;
+}
+
+.frame .text-wrapper-4 {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 200px;
+    -webkit-text-stroke: 5px #000000;
+    margin: 20px 0;
+}
+
+.frame .text-wrapper-5, .frame .text-wrapper-6 {
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.frame .p, .frame .i-am-a-passionate, .frame .on-the-advanced-side {
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.frame .p {
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.frame .div-wrapper-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 23px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.frame .text-wrapper-7 {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #010100;
+    font-size: 20px;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Inner Container */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Centered with max width */
+    padding: 0 20px;
+  }
+  
+  /* Logo */
+  .logo {
+    font-family: "Inter-Bold", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 800px;
+    color: #ffffff;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-item {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #007BFF; /* Modern hover color */
+  }
+  
+  /* Hamburger Menu for Mobile */
+  .Menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .frame .text-wrapper-4 {
+        font-size: 160px;
+    }
+
+    .frame .text-wrapper-5, .frame .text-wrapper-6 {
+        font-size: 28px;
+    }
+
+    .frame .p, .frame .i-am-a-passionate, .frame .on-the-advanced-side {
+        font-size: 18px;
+    }
+
+    .frame .div-wrapper-2 {
+        width: 220px;
+        height: 54px;
+        padding: 15px 20px;
+    }
+
+    .frame .text-wrapper-7 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .frame .text-wrapper-4 {
+        font-size: 120px;
+    }
+
+    .frame .text-wrapper-5, .frame .text-wrapper-6 {
+        font-size: 24px;
+    }
+
+    .frame .p, .frame .i-am-a-passionate, .frame .on-the-advanced-side {
+        font-size: 16px;
+    }
+
+    .frame .div-wrapper-2 {
+        width: 180px;
+        height: 48px;
+        padding: 10px 15px;
+    }
+
+    .frame .text-wrapper-7 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 414px) {
+    .frame .text-wrapper-4 {
+        font-size: 80px;
+    }
+
+    .frame .text-wrapper-5, .frame .text-wrapper-6 {
+        font-size: 20px;
+    }
+
+    .frame .p, .frame .i-am-a-passionate, .frame .on-the-advanced-side {
+        font-size: 14px;
+    }
+
+    .frame .div-wrapper-2 {
+        width: 140px;
+        height: 40px;
+        padding: 5px 10px;
+    }
+
+    .frame .text-wrapper-7 {
+        font-size: 14px;
+    }
+}
