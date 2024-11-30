@@ -53,6 +53,11 @@
     padding: 8px 10px;
 }
 
+.frame .div-wrapper:hover {
+    background-color: #ffcc00; /* Change background color on hover */
+    transform: scale(1.05);
+  }
+
 .frame .text-wrapper-3 {
     font-family: "Inter-ExtraBold", Helvetica;
     font-weight: 800;
@@ -76,18 +81,39 @@
     margin: 20px 0; /* Adjust margin for spacing */
 }
 
-.frame .text-wrapper-4, .frame .text-wrapper-5, .frame .text-wrapper-6 {
+.frame .marquee-text , .frame .text-wrapper-5, .frame .text-wrapper-6 {
     text-align: center;
     width: 100%;
 }
 
-.frame .text-wrapper-4 {
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%; /* Adjust as needed */
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.frame .marquee-text {
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
-    color: #ffffff;
+    color: #000000;
     font-size: 200px;
-    -webkit-text-stroke: 5px #000000;
+    -webkit-text-stroke: 5px #cc00ff;
     margin: 20px 0;
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 .frame .text-wrapper-5, .frame .text-wrapper-6 {
@@ -107,24 +133,41 @@
     margin: 10px 0;
 }
 
-.frame .p {
+.frame .glitch {
     font-family: "Playfair Display-Bold", Helvetica;
     font-weight: 700;
-    color: #000000;
-    font-size: 20px;
+    color: #cc00ff;
+    font-size: 30px;
     text-align: center;
     margin: 10px 0;
+    position: relative;
+    text-shadow: 2px 2px #f00, -2px -2px #0ff;
+    animation: glitch 0.3s infinite;
 }
 
-.frame .div-wrapper-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 23px;
-    margin: 20px 0;
-    background-color: #ffffff;
-    border-radius: 50px;
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px #f00, -2px -2px #0ff;
+        transform: translate(0, 0);
+    }
+    25% {
+        text-shadow: -2px -2px #0ff, 2px 2px #f00;
+        transform: translate(-2px, 2px);
+    }
+    50% {
+        text-shadow: 2px -2px #f00, -2px 2px #0ff;
+        transform: translate(2px, -2px);
+    }
+    75% {
+        text-shadow: -2px 2px #0ff, 2px -2px #f00;
+        transform: translate(-2px, -2px);
+    }
+    100% {
+        text-shadow: 2px 2px #f00, -2px -2px #0ff;
+        transform: translate(0, 0);
+    }
 }
+
 
 .frame .text-wrapper-7 {
     font-family: "Inter-Bold", Helvetica;
@@ -266,6 +309,12 @@
         height: 40px;
         padding: 5px 10px;
     }
+
+    .frame .text-wrapper-7 {
+        font-size: 14px;
+    }
+}
+
 
     .frame .text-wrapper-7 {
         font-size: 14px;
